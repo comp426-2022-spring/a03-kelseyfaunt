@@ -38,14 +38,14 @@ app.get('/app/flips/:number', (req, res) => {
 app.get('/app/flip/call/heads', (req, res) => {
     res.statusCode = 200;
     let result = flipACoin('heads');
-    res.send(record);
+    res.send(result);
     res.writeHead( res.statusCode, { 'Content-Type' : 'text/plain' });  
 })
 
 app.get('/app/flip/call/tails', (req, res) => {
     res.statusCode = 200;
     let result = flipACoin('tails');
-    res.send(record);
+    res.send(result);
     res.writeHead( res.statusCode, { 'Content-Type' : 'text/plain' });  
 })
 
